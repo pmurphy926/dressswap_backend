@@ -1,0 +1,1 @@
+web: gunicorn django_rest_dress_api.wsgi
