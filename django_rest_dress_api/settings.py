@@ -40,7 +40,6 @@ ALLOWED_HOSTS = ['localhost', 'sheltered-basin-22350.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'wishlist',
     'corsheaders',
     'dresses_api',
     'rest_framework',
@@ -75,7 +74,6 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'wishlist.context_processors.wishlist_items',
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
@@ -84,8 +82,6 @@ TEMPLATES = [
         },
     },
 ]
-
-WISHLIST_ITEM_MODEL = 'my_webshop.Product'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
